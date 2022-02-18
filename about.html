@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!---Reference stylesheet--->
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>Home - Jared Myers</title><!---Set page title--->
+		<!---Favicon sizing based on browser size--->
+		<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+	</head>
+	<!---Set content width to device width. Horizontal scrolling is not user-friendly--->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<body>
+		<!---Menu--->
+		<div id="menuzone">
+			<!---Different menu classes for different browser orientations--->
+			<ul>
+				<!---Horizontal browser--->
+				<li>
+					<ul class="ulmenunorm">
+						<li class="menuli"><a class="menuitem_a" href="index.html">Home</a></li>
+						<li class="menuli"><a class="menuitem_a" href="about.html">About</a></li>
+						<li class="menuli"><a class="menuitem_a" href="projects.html">Projects</a></li>
+					</ul>
+				</li>
+				<!---Vertical browser--->
+				<li>
+					<!---Vertical browser user clicks/taps on drop-down menu icon to reveal--->
+					<input id="check03" type="checkbox" name="menudrop"/>
+					<label id="menulabel" for="check03">Menu</label>
+					<ul class="submenu">
+						<li class="menuli"><a class="menuitem_a" href="index.html">Home</a></li>
+						<li class="menuli"><a class="menuitem_a" href="about.html">About</a></li>
+						<li class="menuli"><a class="menuitem_a" href="projects.html">Projects</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<br />
+		<!---Page title--->
+		<h1>About</h1>
+
+		<p>Jared Myers is a college junior majoring in computer science at the University of Cincinnati in the class of 2025. Jared enjoys programming, playing video games, and watching movies. He has a fifteen year-old dog named <label id="gameby" for="check02">Gameboy,</label> who is a German Shorthair Pointer, and a one year-old dog named <label id="moly" for="check01">Molly</label>, who is an Australian Shepherd-Lab mix. <br />
+
+			<table>
+				<tr>
+					<td>
+						<input id="check02" type="checkbox" name="gameboy"/>
+						<input id="check01" type="checkbox" name="molly"/>
+
+						<table class="submenu">
+							<tr>
+								<td class="inline"><img src="media/gameboy1.png" class="hiddenimg" id="gameboy" width="494px" height="658"></td>
+								<td class="inline"><img src="media/Molly1.png" class="hiddenimg" id="molly" width="494px" height="658"></td>
+								<td class="inline"><img src="media/gameboy2.png" class="hiddenimg" id="gameboy" width="494px" height="658"></td>
+								<td class="inline"><img src="media/Molly2.png" class="hiddenimg" id="molly" width="494px" height="658"></td>
+								<td class="inline"><img src="media/gameboy3.png" class="hiddenimg" id="gameboy" width="494px" height="658"></td>
+								<td class="inline"><img src="media/Molly3.png" class="hiddenimg" id="molly" width="494px" height="658"></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</p>
+
+		<div id="intellectualprop">
+			<p id="copyright">Website by Jared Myers.</p>
+		</div>
+	</body>
+</html>
