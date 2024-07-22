@@ -1,0 +1,15 @@
+@media (prefers-color-scheme: dark) {
+    :root, body {
+        background-color: #171717;
+        color: #f9f1e1;
+        --accent: #36a460;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root, body {
+        background-color: #f9f1e1;
+        color: #171717;
+        --accent: #36a460;
+    }
+}
