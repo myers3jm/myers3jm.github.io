@@ -1,66 +1,62 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<!---Reference stylesheet--->
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<title>Home - Jared Myers</title><!---Set page title--->
-		<!---Favicon sizing based on browser size--->
-		<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-		<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-		<link rel="manifest" href="/manifest.json">
-		<meta name="msapplication-TileColor" content="#ffffff">
-		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-		<meta name="theme-color" content="#ffffff">
-	</head>
-	<!---Set content width to device width. Horizontal scrolling is not user-friendly--->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<body>
-		<!---Menu--->
-		<div id="menuzone">
-			<!---Different menu classes for different browser orientations--->
-			<ul>
-				<!---Horizontal browser--->
-				<li>
-					<ul class="ulmenunorm">
-						<li class="menuli"><a class="menuitem_a" href="index.html">Home</a></li>
-						<li class="menuli"><a class="menuitem_a" href="about.html">About</a></li>
-						<li class="menuli"><a class="menuitem_a" href="projects.html">Projects</a></li>
-					</ul>
-				</li>
-				<!---Vertical browser--->
-				<li>
-					<!---Vertical browser user clicks/taps on drop-down menu icon to reveal--->
-					<input id="check03" type="checkbox" name="menudrop"/>
-					<label id="menulabel" for="check03">Menu</label>
-					<ul class="submenu">
-						<li class="menuli"><a class="menuitem_a" href="index.html">Home</a></li>
-						<li class="menuli"><a class="menuitem_a" href="about.html">About</a></li>
-						<li class="menuli"><a class="menuitem_a" href="projects.html">Projects</a></li>
-					</ul>
-				</li>
-			</ul>
-		</div>
+    <head>
+        <meta charset="utf-8">
+        <title>WAPH-myers3jm</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous">
+        </script>
+    </head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ERJGDN1KER"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-		
-		<br />
-		<!---Page title--->
-		<h1>Home</h1>
-		
-		<p>This is a website developed by Jared "Matt" Myers to share information about his academic and professional career. Details on his work may be found under <a href="projects.html">Projects</a>.</p>
-		
-		<div id="intellectualprop">
-			<p id="copyright">Website by J. Matthew Myers.</p>
-		</div>
-	</body>
+        gtag('config', 'G-ERJGDN1KER');
+    </script>
+    <body>
+        <div class="container-wrapper">
+            <div id="top">
+                <h1>Web Application Programming and Hacking</h1>
+                <h2>Personal Webpage</h2>
+            </div>
+            <div id="menubar">
+                <h3>Student: Matt Myers</h3>
+            </div>
+            <div id="main">
+                <div id="about-me">
+                    <h2>Matt Myers</h2>
+                    <img src="images/headshot.jpg">
+                    <h3>Contact Info</h3>
+                    <a href="mailto:myers3jm@mail.uc.edu">myers3jm@mail.uc.edu</a>
+                    <h3>Background</h3>
+                    <p>Matt is a senior at the University of Cincinnati studying computer science and pursuing a certificate in cyber operations with a focus on cyber attacks and security.</p>
+                    <h3>Experience</h3>
+                    <p>Matt has completed multiple co-op rotations with two companies. He began at Lexmark International in May, 2022, and finished his second rotation there in April, 2023. He then joined SHP Leading Design in August, 2023</p>
+                    <h3>Skills</h3>
+                </div>
+                <div id="course-info">
+                    <h2>Course Information</h2>
+                    <h3>Labs</h3>
+                    <h4>Lab 0</h4>
+                    <p>In this lab we set up our development environments for the course. We created Ubuntu 22.04 VMs and installed a number of tools to help us during the course, including Apache, VS Code, Wireshark, and Google Chrome.</p>
+                    <h4>Lab 1</h4>
+                    <p>This lab explored the HTTP protocol for communicating with web servers. I made use of Wireshark to analyze packets created during HTTP GET request/HTTP OK response exchanges using a web browser. I analyzed packets created using telnet to send HTTP GET requests without a web browser. I wrote a Common Gateway Interface in C and deployed it using Apache Web Server. I deployed a simple PHP web application. I wrote a PHP web application to study sending data through HTTP GET requests. I used the *curl* tool to send HTTP POST requests.</p>
+                    <h4>Lab 2</h4>
+                    <p>This lab covered topics such as using HTML to display and arrange information on a webpage, including forms in a webpage, and using JavaScript to implement client-side logic. The lab also covered the use of Ajax, CSS (inline and linked), jQuery, and the use of web APIs to pull in functionality from the internet.</p>
+                    <h3>Hackathons</h3>
+                    <h4>Hackathon 1</h4>
+                    <p>This hackathon covered cross-site scripting attacks. We practiced executing attacks on a web application in which we had to force the page to send an alert with our name in it. In the second half of the hackathon, we applied defensive measures to our own web applications to counter the attacks we had used.</p>
+                    <h3>Projects</h3>
+                    <h4>Project 1</h4>
+                    <p>This project required us to create personal webpages with information about ourselves, the course, and the assignments we completed. We were required to use basic HTML elements to structure our content, Ajax, CSS, jQuery, and web APIs to allow dynamic content, and to utilize technologies of our own choosing to style the page, include a tracker, use a graphic web API, and handle cookies.</p>
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
