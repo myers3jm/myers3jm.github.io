@@ -13,3 +13,9 @@
         --accent: #36a460;
     }
 }
+
+p.react {
+    color: #36a460;
+    font-weight: 900;
+    font-size: xx-large;
+}
