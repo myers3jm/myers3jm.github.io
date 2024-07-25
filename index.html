@@ -37,7 +37,7 @@
                 greeting.innerHTML = "<p>Welcome to my homepage!</p>";
             }
             else {
-                document.cookie = "date=" + new Date().toDateString() + ";";
+                document.cookie = "date=" + new Date().toLocaleDateString() + "_" + new Date().toLocaleTimeString() + ";";
                 const greeting = document.getElementById("greeting");
                 greeting.innerHTML = "<p>Welcome back! Your last visit was " + document.cookie.valueOf("date") + "</p>";
             }
@@ -75,19 +75,6 @@
     </div>
     <div id="react"></div>
     <div id="menubar">
-        <script>
-            var shown = false;
-            function showhideEmail(){
-                if (shown){
-                    document.getElementById('email').innerHTML = "Show my email";
-                    shown = false;
-                } else {
-                    var myemail = "<a href='mailto:myers3jm" + "@" + "mail.uc.edu'>myers3jm" + "@" + "mail.uc.edu</a>";
-                    document.getElementById('email').innerHTML = myemail;
-                    shown = true;
-                }
-            }
-        </script>
         <div id="digit-clock"></div>
         <canvas id="analog-clock" width="150" height="150" style="background-color:#999"></canvas>
         <script src="https://waph-uc.github.io/clock.js"></script>
