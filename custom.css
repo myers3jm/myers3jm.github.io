@@ -1,21 +1,41 @@
 @media (prefers-color-scheme: dark) {
     :root, body {
-        background-color: #171717;
-        color: #f9f1e1;
+        --primary: #171717;
+        --secondary: #f9f1e1;
         --accent: #36a460;
     }
 }
 
 @media (prefers-color-scheme: light) {
     :root, body {
-        background-color: #f9f1e1;
-        color: #171717;
+        --primary: #f9f1e1;
+        --secondary: #171717;
         --accent: #36a460;
     }
 }
 
+:root, body {
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+div {
+    border-radius: 2%;
+}
+
 p.react {
-    color: #36a460;
+    color: var(--accent);
     font-weight: 900;
     font-size: xx-large;
+}
+
+div.external {
+    background-color: var(--secondary);
+    color: var(--primary);
+    padding: 5%;
+}
+
+p.disclaimer {
+    color: var(--accent);
+    font-style: italic;
 }
