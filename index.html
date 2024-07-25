@@ -137,7 +137,7 @@
             )
             $.get("https://dog.ceo/api/breeds/image/random",
                 function(result) {
-                    $("#dog").html(" Here's a dog: " + result.message);
+                    $("#dog").html(" Here's a dog: <img src=\"" + result.message + "\">");
                 }
             )
         </script>
