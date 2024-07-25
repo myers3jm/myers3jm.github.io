@@ -10,6 +10,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
         crossorigin="anonymous">
     </script>
+    
     <script type="module" crossorigin src="/assets/index-D0dlGN24.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-Bo5ozhuF.css">
   </head>
@@ -27,9 +28,20 @@
       <div id="top">
           <h1>Web Application Programming and Hacking</h1>
           <h2>Personal Webpage</h2>
-      </div>
-      <div id="menubar">
-          <h3>Student: Matt Myers</h3>
+          <div id="greeting"></div>
+          <script>
+            if (document.cookie.indexOf("username" < 0)) {
+                document.cookie = "username=myers3jm;";
+                document.cookie = "date=" + new Date().toLocaleDateString() + "_" + new Date().toLocaleTimeString() + ";";
+                const greeting = document.getElementById("greeting");
+                greeting.innerHTML = "<p>Welcome to my homepage!</p>";
+            }
+            else {
+                document.cookie = "date=" + new Date().toDateString() + ";";
+                const greeting = document.getElementById("greeting");
+                greeting.innerHTML = "<p>Welcome back! Your last visit was " + document.cookie.valueOf("date") + "</p>";
+            }
+        </script>
       </div>
       <div id="main">
           <div id="about-me">
@@ -137,7 +149,7 @@
             )
             $.get("https://dog.ceo/api/breeds/image/random",
                 function(result) {
-                    $("#dog").html(" Here's a dog: <img src=\"" + result.message + "\">");
+                    $("#dog").html("<img src=\"" + result.message + "\">");
                 }
             )
         </script>
