@@ -36,7 +36,7 @@
               <h2>Matt Myers</h2>
               <img src="/assets/headshot-BFUDnpyH.jpg">
               <h3>Contact Info</h3>
-              <a href="mailto:myers3jm@mail.uc.edu">myers3jm@mail.uc.edu</a>
+              <div id="email" onclick="showhideEmail()">Show my email</div>
               <h3>Background</h3>
               <p>Matt is a senior at the University of Cincinnati studying computer science and pursuing a certificate in cyber operations with a focus on cyber attacks and security.</p>
               <h3>Experience</h3>
@@ -63,7 +63,19 @@
     </div>
     <div id="react"></div>
     <div id="menubar">
-        <div id="email" onclick="showhideEmail()">Show my email</div>
+        <script>
+            var shown = false;
+            function showhideEmail(){
+                if (shown){
+                    document.getElementById('email').innerHTML = "Show my email";
+                    shown = false;
+                } else {
+                    var myemail = "<a href='mailto:myers3jm" + "@" + "mail.uc.edu'>myers3jm" + "@" + "mail.uc.edu</a>";
+                    document.getElementById('email').innerHTML = myemail;
+                    shown = true;
+                }
+            }
+        </script>
         <div id="digit-clock"></div>
         <canvas id="analog-clock" width="150" height="150" style="background-color:#999"></canvas>
         <script src="https://waph-uc.github.io/clock.js"></script>
