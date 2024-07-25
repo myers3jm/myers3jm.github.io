@@ -30,7 +30,7 @@ Deploying to GitHub.io was achieved by following these steps:
 The branch "gh-pages" is created by the build process, and will be explained below.
 
 ### Web Applications Programming and Hacking (Course)
-Check out the [course](https://www.myers3jm.github.io) this website is a project for.
+Check out the [course](https://myers3jm.github.io) this website is a project for.
 
 ## Non-technical Requirements
 
