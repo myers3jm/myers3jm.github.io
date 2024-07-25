@@ -6,7 +6,9 @@
 
 ![Matt's Headshot](images/headshot.jpg)
 
-# Project 1 - Frontend Web Development with a Professional Profile Website on github.io cloud service 
+# Project 1 - Frontend Web Development with a Professional Profile Website on github.io cloud service
+
+[GitHub Repository](https://github.com/myers3jm/myers3jm.github.io/)
 
 ## Overview 
 
