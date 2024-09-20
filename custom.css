@@ -37,6 +37,16 @@ a.project {
     color: var(--highlight);
 }
 
+p.private-project {
+    color: var(--highlight);
+}
+
+span.private-project {
+    color: var(--primary);
+    font-weight: bold;
+    padding: 2%;
+}
+
 div.project {
     background-color: var(--card);
     color: var(--secondary);
