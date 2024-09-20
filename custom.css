@@ -3,6 +3,8 @@
         --primary: #171717;
         --secondary: #f9f1e1;
         --accent: #36a460;
+        --highlight: #fcdc90;
+        --card: #424242;
     }
 }
 
@@ -11,6 +13,8 @@
         --primary: #f9f1e1;
         --secondary: #171717;
         --accent: #36a460;
+        --highlight: #fcdc90;
+        --card: #424242;
     }
 }
 
@@ -19,20 +23,25 @@
     color: var(--secondary);
 }
 
-div {
-    border-radius: 2%;
-}
-
 p.react {
     color: var(--accent);
     font-weight: 900;
     font-size: xx-large;
 }
 
-div.external {
-    background-color: var(--secondary);
-    color: var(--primary);
+a {
+    color: var(--accent);
+}
+
+a.project {
+    color: var(--highlight);
+}
+
+div.project {
+    background-color: var(--card);
+    color: var(--secondary);
     padding: 5%;
+    margin: 2%;
 }
 
 p.disclaimer {

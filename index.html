@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://unpkg.com/simpledotcss/simple.min.css">
     <link rel="stylesheet" href="custom.css">
     <meta charset="utf-8">
-    <title>WAPH-myers3jm</title>
+    <title>J. Matthew Myers</title>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
         crossorigin="anonymous">
     </script>
@@ -23,86 +23,53 @@
       gtag('config', 'G-ERJGDN1KER');
   </script>
   <body>
-    <script type="module" src="/src/main.jsx"></script>
     <div class="container-wrapper">
       <div id="top">
-          <h1>Web Application Programming and Hacking</h1>
-          <h2>Personal Webpage</h2>
-          <div id="greeting"></div>
-          <script>
-            if (document.cookie.indexOf("username" < 0)) {
-                document.cookie = "username=myers3jm;";
-                document.cookie = "date=" + new Date().toLocaleDateString() + "_" + new Date().toLocaleTimeString() + ";";
-                const greeting = document.getElementById("greeting");
-                greeting.innerHTML = "<p>Welcome to my homepage!</p>";
-            }
-            else {
-                document.cookie = "date=" + new Date().toLocaleDateString() + "_" + new Date().toLocaleTimeString() + ";";
-                const greeting = document.getElementById("greeting");
-                greeting.innerHTML = "<p>Welcome back! Your last visit was " + document.cookie.valueOf("date") + "</p>";
-            }
-        </script>
+          <h1>J. Matthew Myers</h1>
       </div>
       <div id="main">
           <div id="about-me">
-              <h2>Matt Myers</h2>
               <img src="images/headshot.jpg">
               <h3>Contact Info</h3>
-              <div id="email-section"></div>
+              <div id="contact">
+                <p>614.981.3685</p>
+                <a href="mailto:myers3jm@mail.uc.edu">myers3jm@mail.uc.edu</a>
+              </div>
               <h3>Background</h3>
-              <p>Matt is a senior at the University of Cincinnati studying computer science and pursuing a certificate in cyber operations with a focus on cyber attacks and security.</p>
+              <p>Matt is a senior at the University of Cincinnati studying <a target="_blank" href="https://ceas.uc.edu/academics/departments/computer-science/degrees-programs/computer-science-bachelor-of-science.html">computer science</a> and pursuing a <a target="_blank" href="https://ceas.uc.edu/academics/departments/electrical-computer-engineering/degrees-programs/cyber-operations-certificate.html">certificate</a> in cyber operations with a focus on cyber attacks and security.</p>
               <h3>Experience</h3>
-              <p>Matt has completed multiple co-op rotations with two companies. He began at Lexmark International in May, 2022, and finished his second rotation there in April, 2023. He then joined SHP Leading Design in August, 2023</p>
-              <h3>Skills</h3>
+              <p>Matt has completed multiple co-op rotations with two companies. He began at <a target="_blank" href="https://www.lexmark.com/en_us.html">Lexmark International</a> in May, 2022, and finished his second rotation there in April, 2023. He then joined <a target="_blank" href="https://shp.com/">SHP</a> in August, 2023, and completed his fourth co-op in August, 2024.</p>
+              <p>Matt has taken several courses at the University of Cincinnati which have given him a greater understanding of computer science and cyber security in general. Some of the courses Matt has taken have given him opportunities such as writing his own malware, reverse engineering real-world malware samples, hacking his classmates, hacking his professors, and defending his own online services from attackers. As such, Matt has expertise not only in the broader domain of computer science, but also in cryptography, security, and networking.</p>
+              <p>In his free time, Matt also manages a homelab. He has a dedicated machine running <a target="_blank" href="https://www.proxmox.com/en/">Proxmox</a>, which allows him to deploy multiple distinct operating environments simultaneously. With this capability, Matt runs a Windows 10 machine for schoolwork, and an Ubuntu Server machine which hosts services such as <a target="_blank" href="https://www.wireguard.com/">WireGuard</a>, <a target="_blank" href="https://jellyfin.org/">Jellyfin</a>, <a target="_blank" href="https://nextcloud.com/">Nextcloud</a>, and more. Additionally, Matt hosts his own instance of the <a target="_blank" href="https://github.com/dani-garcia/vaultwarden">Vaultwarden</a> password manager on a Raspberry Pi 3B+.</p>
           </div>
-          <div id="course-info">
-              <h2>Course Information</h2>
-              <h3>Labs</h3>
-              <h4>Lab 0</h4>
-              <p>In this lab we set up our development environments for the course. We created Ubuntu 22.04 VMs and installed a number of tools to help us during the course, including Apache, VS Code, Wireshark, and Google Chrome.</p>
-              <h4>Lab 1</h4>
-              <p>This lab explored the HTTP protocol for communicating with web servers. I made use of Wireshark to analyze packets created during HTTP GET request/HTTP OK response exchanges using a web browser. I analyzed packets created using telnet to send HTTP GET requests without a web browser. I wrote a Common Gateway Interface in C and deployed it using Apache Web Server. I deployed a simple PHP web application. I wrote a PHP web application to study sending data through HTTP GET requests. I used the *curl* tool to send HTTP POST requests.</p>
-              <h4>Lab 2</h4>
-              <p>This lab covered topics such as using HTML to display and arrange information on a webpage, including forms in a webpage, and using JavaScript to implement client-side logic. The lab also covered the use of Ajax, CSS (inline and linked), jQuery, and the use of web APIs to pull in functionality from the internet.</p>
-              <h3>Hackathons</h3>
-              <h4>Hackathon 1</h4>
-              <p>This hackathon covered cross-site scripting attacks. We practiced executing attacks on a web application in which we had to force the page to send an alert with our name in it. In the second half of the hackathon, we applied defensive measures to our own web applications to counter the attacks we had used.</p>
-              <h3>Projects</h3>
-              <h4>Project 1</h4>
-              <p>This project required us to create personal webpages with information about ourselves, the course, and the assignments we completed. We were required to use basic HTML elements to structure our content, Ajax, CSS, jQuery, and web APIs to allow dynamic content, and to utilize technologies of our own choosing to style the page, include a tracker, use a graphic web API, and handle cookies.</p>
+          <div id="projects">
+            <h3>Recent Projects</h3>
+            <div class="project">
+                <a class="project" href="https://github.com/myers3jm/Tools/tree/main/etymology">Etymological Analysis Tool</a>
+                <p>A utility to evaluate linguistic origins within a given document. This tool is useful for establishing providence for documents with ambiguous attribution.</p>
+            </div>
+            <div class="project">
+                <a class="project" href="https://github.com/waph-team6-sm-24/waph-teamproject">Miniature Social Media Web Application</a>
+                <p>A small social media web application. This was developed as part of Dr. Phu Phung's <a target="_blank" href="https://github.com/phungph-uc/waph">Web Application Programming and Hacking</a> course.</p>
+            </div>
+            <div class="project">
+                <a class="project" href="https://github.com/myers3jm/AprilFools">Annual Rickroll</a>
+                <p>Rickrolling is a joke popular with young adults. It involves tricking an acquaintance into viewing the music video for Rick Astley's "Never Gonna Give You Up." This project is an annual exercise in fun and creative means of achieving this goal.</p>
+            </div>
+            <div class="project">
+                <a class="project" href="https://github.com/Fleet-Accelerators-Navigation-Guild/traffic-sim">Traffic Simulator</a>
+                <p>A traffic simulator built with Unreal Engine. This project utilizes Unreal Engine to simulate collision avoidance between multiple vehicles traveling around a closed circuit.</p>
+            </div>
+            <div class="project">
+                <a class="project" href="https://github.com/myers3jm/Thankinator">Thank-you Note Generator</a>
+                <p>Given a spreadsheet, this tool will generate personalized thank-you notes for any occasion, such as a wedding, graduation party, or baby shower.</p>
+            </div>
+            <div class="project">
+                <a class="project" href="https://github.com/myers3jm/PaintByNumber">Paint By Numbers Generator</a>
+                <p>This is a work-in-progress implementation of a paint by numbers creation algorithm described <a target="_blank" href="https://codegolf.stackexchange.com/a/42235">here</a></p>
+            </div>
           </div>
       </div>
-    </div>
-    <div id="react"></div>
-    <div id="menubar">
-        <div id="digit-clock"></div>
-        <canvas id="analog-clock" width="150" height="150" style="background-color:#999"></canvas>
-        <script src="https://waph-uc.github.io/clock.js"></script>
-        <script>
-            function displayTime() {
-                document.getElementById('digit-clock').innerHTML = "Current time: " + new Date();
-            }
-            setInterval(displayTime, 500);
-
-            var canvas = document.getElementById("analog-clock");
-            var ctx = canvas.getContext("2d");
-            var radius = canvas.height / 2;
-            ctx.translate(radius, radius);
-            radius = radius * 0.90;
-            setInterval(drawClock, 1000);
-
-            function drawClock() {
-                drawFace(ctx, radius);
-                drawNumbers(ctx, radius);
-                drawTime(ctx, radius);
-            }
-        </script>
-    </div>
-    <div class="external">
-        <p class="disclaimer">Disclaimer: The content in this section comes from external sources, and does not reflect the views or beliefs of Matt Myers</p>
-        <div id="age-section"></div>
-        <div id="joke-section"></div>
-        <div id="dog-section"></div>
     </div>
   </body>
 </html>
