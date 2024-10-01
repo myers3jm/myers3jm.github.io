@@ -3,8 +3,7 @@
         --primary: #171717;
         --secondary: #f9f1e1;
         --accent: #36a460;
-        --highlight: #fcdc90;
-        --card: #424242;
+        --highlight: #ddbb6a;
     }
 }
 
@@ -13,20 +12,77 @@
         --primary: #f9f1e1;
         --secondary: #171717;
         --accent: #36a460;
-        --highlight: #fcdc90;
-        --card: #424242;
+        --highlight: #ddbb6a;
     }
 }
 
-:root, body {
+
+:root {
     background-color: var(--primary);
     color: var(--secondary);
+    font-family: 'Poppins';
 }
 
-p.react {
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.hero {
+    max-width: 66%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-size: xx-large;
+}
+
+img.rounded-full {
+    border-radius: 9999px;
+    max-width: 66%;
+    padding: 16%;
+}
+
+.box {
+    max-height: 33%;
+    max-width: 66%;
+}
+
+.cardbox {
+    display: flex;
+    @media only screen and (min-width: 960px) {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    @media only screen and (max-width: 359px) {
+        flex-direction: column;
+        flex-wrap: wrap;
+        div {
+            width: 66%;
+        }
+    }
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.react {
     color: var(--accent);
     font-weight: 900;
     font-size: xx-large;
+}
+
+h1 {
+    color: var(--highlight);
+    font-weight: 900;
+}
+
+h2, h3, h4, h5, h6 {
+    font-weight: 300;
 }
 
 a {
@@ -47,14 +103,56 @@ span.private-project {
     padding: 2%;
 }
 
-div.project {
-    background-color: var(--card);
+div.card {
+    background-color: var(--primary);
     color: var(--secondary);
     padding: 5%;
     margin: 2%;
+    border: 2px solid var(--secondary);
+    border-radius: 14px;
 }
 
-p.disclaimer {
-    color: var(--accent);
-    font-style: italic;
+div.special-card {
+    max-width: 33%;
+    background-color: var(--primary);
+    position: relative;
+    color: var(--secondary);
+    padding: 5%;
+    margin: 2%;
+    border-radius: 14px;
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+div.special-card::after, div.special-card::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), var(--accent), var(--highlight), var(--accent), var(--highlight), var(--accent));
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 2px;
+    border-radius: 16px;
+    animation: 3s spin linear infinite;
+}
+
+div.special-card::before {
+    filter: blur(1.5rem);
+    opacity: 0.33;
+}
+
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+    to {
+        --angle: 360deg;
+    }
 }
