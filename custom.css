@@ -4,7 +4,7 @@
         --secondary: #f9f1e1;
         --accent: #36a460;
         --highlight: #fcdc90;
-        --card: #424242;
+        --gradient: linear-gradient(to right, var(--highlight), var(--accent));
     }
 }
 
@@ -14,7 +14,7 @@
         --secondary: #171717;
         --accent: #36a460;
         --highlight: #fcdc90;
-        --card: #424242;
+        --gradient: linear-gradient(to right, var(--highlight), var(--accent));
     }
 }
 
@@ -58,4 +58,11 @@ div.project {
 p.disclaimer {
     color: var(--accent);
     font-style: italic;
+}
+
+.gradient {
+    background: var(--gradient);
+    background-clip: text;
+    color: transparent;
+    padding: 10px;
 }
