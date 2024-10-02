@@ -48,10 +48,11 @@ span.private-project {
 }
 
 div.project {
-    background-color: var(--card);
     color: var(--secondary);
     padding: 5%;
     margin: 2%;
+    border: 2px solid var(--accent);
+    border-radius: 16px;
 }
 
 p.disclaimer {
