@@ -59,4 +59,5 @@ div.project {
 img.profile {
     max-width: 33%;
     border-radius: 9999px;
+    padding: 10px;
 }
