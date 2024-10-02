@@ -1,19 +1,19 @@
 @media (prefers-color-scheme: dark) {
     :root, body {
         --primary: #171717;
-        --secondary: #f9f1e1;
+        --secondary: #fffbf2;
         --accent: #36a460;
-        --highlight: #fcdc90;
+        --highlight: #d3ac52;
         --gradient: linear-gradient(to right, var(--highlight), var(--accent));
     }
 }
 
 @media (prefers-color-scheme: light) {
     :root, body {
-        --primary: #f9f1e1;
+        --primary: #fffbf2;
         --secondary: #171717;
         --accent: #36a460;
-        --highlight: #fcdc90;
+        --highlight: #d3ac52;
         --gradient: linear-gradient(to right, var(--highlight), var(--accent));
     }
 }
@@ -21,12 +21,6 @@
 :root, body {
     background-color: var(--primary);
     color: var(--secondary);
-}
-
-p.react {
-    color: var(--accent);
-    font-weight: 900;
-    font-size: xx-large;
 }
 
 a {
@@ -42,8 +36,8 @@ p.private-project {
 }
 
 span.private-project {
-    color: var(--primary);
-    font-weight: bold;
+    color: var(--accent);
+    font-weight: 100;
     padding: 2%;
 }
 
@@ -55,14 +49,14 @@ div.project {
     border-radius: 16px;
 }
 
-p.disclaimer {
-    color: var(--accent);
-    font-style: italic;
-}
-
 .gradient {
     background: var(--gradient);
     background-clip: text;
     color: transparent;
     padding: 10px;
+}
+
+img.profile {
+    max-width: 33%;
+    border-radius: 9999px;
 }
