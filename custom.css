@@ -56,6 +56,67 @@ div.project {
     /* padding: 10px; */
 }
 
+/* Desktop */
+@media screen and (min-width: 1024px) {
+    .stroke-text {
+        margin: 0;
+        height: auto;
+        font-size: 500%;
+        font-weight: 600;
+        stroke: var(--highlight);
+        stroke-width: 1px;
+        fill: var(--primary);
+    }
+}
+/* Tablet */
+@media screen and (min-width: 768px) and (max-device-width: 1024px) {
+    .stroke-text {
+        margin: 0;
+        height: auto;
+        font-size: 400%;
+        font-weight: 600;
+        stroke: var(--highlight);
+        stroke-width: 1px;
+        fill: var(--primary);
+    }
+}
+/* Mobile Portrait */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    .stroke-text {
+        margin: 0;
+        height: auto;
+        font-size: 250%;
+        font-weight: 600;
+        stroke: var(--highlight);
+        stroke-width: 1px;
+        fill: var(--primary);
+    }
+}
+/* Mobile Landscape */
+@media screen and (max-device-width: 640px) and (orientation: landscape) {
+    .stroke-text {
+        margin: 0;
+        height: auto;
+        font-size: 250%;
+        font-weight: 600;
+        stroke: var(--highlight);
+        stroke-width: 1px;
+        fill: var(--primary);
+    }
+}
+/* Mobile Portrait or Landscape */
+@media screen and (max-device-width: 640px) {
+    .stroke-text {
+        margin: 0;
+        height: auto;
+        font-size: 250%;
+        font-weight: 600;
+        stroke: var(--highlight);
+        stroke-width: 1px;
+        fill: var(--primary);
+    }
+}
+
 img.profile {
     max-width: 33%;
     border-radius: 9999px;
