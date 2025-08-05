@@ -58,62 +58,54 @@ div.project {
 
 /* Desktop */
 @media screen and (min-width: 1024px) {
-    .stroke-text {
+    .hero-text {
         margin: 0;
         height: auto;
         font-size: 500%;
         font-weight: 600;
-        stroke: var(--highlight);
-        stroke-width: 1px;
-        fill: var(--primary);
+        -webkit-text-stroke-color: var(--highlight);
+        -webkit-text-stroke-width: 1px;
+        color: transparent;
     }
 }
 /* Tablet */
 @media screen and (min-width: 768px) and (max-device-width: 1024px) {
-    .stroke-text {
+    .hero-text {
         margin: 0;
         height: auto;
-        font-size: 400%;
+        font-size: 300%;
         font-weight: 600;
-        stroke: var(--highlight);
-        stroke-width: 1px;
-        fill: var(--primary);
+        color: var(--highlight);
     }
 }
 /* Mobile Portrait */
 @media screen and (max-device-width: 480px) and (orientation: portrait) {
-    .stroke-text {
+    .hero-text {
         margin: 0;
         height: auto;
-        font-size: 250%;
+        font-size: 300%;
         font-weight: 600;
-        stroke: var(--highlight);
-        stroke-width: 1px;
-        fill: var(--primary);
+        color: var(--highlight);
     }
 }
 /* Mobile Landscape */
 @media screen and (max-device-width: 640px) and (orientation: landscape) {
-    .stroke-text {
+    .hero-text {
         margin: 0;
         height: auto;
-        font-size: 250%;
+        font-size: 300%;
         font-weight: 600;
-        stroke: var(--highlight);
-        stroke-width: 1px;
-        fill: var(--primary);
+        color: var(--highlight);
     }
 }
 /* Mobile Portrait or Landscape */
 @media screen and (max-device-width: 640px) {
-    .stroke-text {
+    .hero-text {
         margin: 0;
         height: auto;
-        font-size: 250%;
+        font-size: 300%;
         font-weight: 600;
-        stroke: var(--highlight);
-        stroke-width: 1px;
-        fill: var(--primary);
+        color: var(--highlight);
     }
 }
 
