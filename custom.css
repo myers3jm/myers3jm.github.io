@@ -53,7 +53,7 @@ div.project {
     background: var(--gradient);
     background-clip: text;
     color: transparent;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 img.profile {

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/simpledotcss/simple.min.css">
+    <link rel="stylesheet" href="custom.css">
+    <meta charset="utf-8">
+    <title>Jared Myers</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous">
+    </script>
+    
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ERJGDN1KER"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-ERJGDN1KER');
+  </script>
+  <body>
+    <div class="container-wrapper">
+      <img class="profile" src="images/headshot.jpg">
+      <div>
+        <h1 style="margin: 0; -webkit-text-stroke-color: var(--highlight); -webkit-text-stroke-width: 1px; color: transparent; font-size:500%">Jared Myers</h1>
+        <h1 class="gradient">Cyber Operations Specialist</h1>
+        <span>614.981.3685 | <a href="mailto:jaredmyers824@gmail.com">Email</a></span>
+      </div>
+      <div id="main">
+          <div id="about-me">
+              <h3>Background</h3>
+              <p>Jared is a graduate from the University of Cincinnati with a BS in <a target="_blank" href="https://ceas.uc.edu/academics/departments/computer-science/degrees-programs/computer-science-bachelor-of-science.html">computer science</a> and a <a target="_blank" href="https://ceas.uc.edu/academics/departments/electrical-computer-engineering/degrees-programs/cyber-operations-certificate.html">certificate</a> in cyber operations with a focus on cyber attacks and security.</p>
+              <h3>Experience</h3>
+              <p>Jared has worked in a variety of IT roles for a total of 22 months of professional and volunteer experience. He began as a teacher's aid at Jonathan Alder High School, assisting in preparing students to take the CompTIA A+ certification exam. He also served as a teacher's aid in an introductory course to the Python programming language. He then volunteered at <a target="_blank" href="https://www.miamioh.edu">Miami University</a> in April, 2018, serving as a system administrator for the Redhawk Hunt scavenging event. He then joined <a target="_blank" href="https://atos.net/">Atos</a> in June, 2020 where he assisted Northrup Grumman employees with computer-related issues.</p>
+              <p>Jared has taken several courses at the University of Cincinnati which have given him opportunities such as reverse engineering real-world malware samples, hacking his classmates, hacking his professors, and defending his own online services from attackers.</p>
+              <p>In his free time, Jared also manages a homelab. He has a dedicated machine running <a target="_blank" href="https://www.proxmox.com/en/">Proxmox</a>, which allows him to deploy multiple distinct operating environments simultaneously.</p>
+          </div>
+          <div id="projects">
+            <h3>Projects</h3>
+            <div class="project">
+              <span class="project">Homelab</span>
+              <p>A collection of self-hosted web services. Currently deployed are a Windows 10 machine, a Manjaro Linux machine, a Debian server machine, <a target="_blank" href="https://www.wireguard.com/">WireGuard</a>, <a target="_blank" href="https://jellyfin.org/">Jellyfin</a>, <a target="_blank" href="https://github.com/dani-garcia/vaultwarden">Vaultwarden</a>, two Minecraft servers, and <a target="_blank" href="https://pi-hole.net/">Pi-Hole</a>.</p>
+            </div>
+            <div class="project">
+                <span class="project">Miniature Social Media Web Application</span>
+                <p>A small social media web application. This was developed as part of Dr. Phu Phung's <i>Web Application Programming and Hacking</i> course. The platform is protected against basic cross-site scripting, SQL injection, cross site request forgery, and session hijacking attacks. The repository for this project is private at the request of the instructor, Dr. Phu Phung.</p>
+            </div>
+            <div class="project">
+                <span class="project">Malware Study I</span>
+                <p>A piece of cross-platform ransomware written in C++20 and built with CMake and G++. This was developed for Dr. John Franco's Cyber Defense Overview course at the University of Cincinnati.</p>
+            </div>
+            <div class="project">
+                <span class="project">Malware Study II</span>
+                <p>A reverse-engineering of the <a href="https://en.wikipedia.org/wiki/Dexter_(malware)">Dexter</a> malware, which is categorized as an infostealer. This analysis consisted of basic static, basic dynamic, advanced static, and advanced dynamic techniques.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
