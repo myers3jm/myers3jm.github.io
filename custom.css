@@ -4,7 +4,10 @@
         --secondary: #fffbf2;
         --accent: #36a460;
         --highlight: #d3ac52;
+        --shadow-primary: #474747;
+        --shadow-secondary: #cfcbc2;
         --gradient: linear-gradient(to right, var(--highlight), var(--accent));
+        --shadow-gradient: linear-gradient(to right, var(--shadow-primary), var(var(--shadow-secondary)));
     }
 }
 
@@ -14,7 +17,10 @@
         --secondary: #171717;
         --accent: #36a460;
         --highlight: #d3ac52;
+        --shadow-primary: #cfcbc2;
+        --shadow-secondary: #474747;
         --gradient: linear-gradient(to right, var(--highlight), var(--accent));
+        --shadow-gradient: linear-gradient(to right, var(--shadow-primary), var(var(--shadow-secondary)));
     }
 }
 
@@ -29,6 +35,13 @@ a {
 
 a.project {
     color: var(--highlight);
+}
+
+.timeline {
+    color: var(--shadow-secondary);
+    font-size: medium;
+    font-weight: 100;
+    font-style: italic;
 }
 
 p.private-project {
@@ -64,7 +77,7 @@ div.project {
         font-size: 500%;
         font-weight: 600;
         -webkit-text-stroke-color: var(--highlight);
-        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-width: 2px;
         color: transparent;
     }
 }
