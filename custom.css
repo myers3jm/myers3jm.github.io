@@ -69,6 +69,14 @@ div.project {
     /* padding: 10px; */
 }
 
+/* Mobile */
+.hero-text {
+    margin: 0;
+    height: auto;
+    font-size: 300%;
+    font-weight: 600;
+    color: var(--highlight);
+}
 /* Desktop */
 @media screen and (min-width: 1024px) {
     .hero-text {
@@ -79,46 +87,6 @@ div.project {
         -webkit-text-stroke-color: var(--highlight);
         -webkit-text-stroke-width: 2px;
         color: transparent;
-    }
-}
-/* Tablet */
-@media screen and (min-width: 768px) and (max-device-width: 1024px) {
-    .hero-text {
-        margin: 0;
-        height: auto;
-        font-size: 300%;
-        font-weight: 600;
-        color: var(--highlight);
-    }
-}
-/* Mobile Portrait */
-@media screen and (max-device-width: 480px) and (orientation: portrait) {
-    .hero-text {
-        margin: 0;
-        height: auto;
-        font-size: 300%;
-        font-weight: 600;
-        color: var(--highlight);
-    }
-}
-/* Mobile Landscape */
-@media screen and (max-device-width: 640px) and (orientation: landscape) {
-    .hero-text {
-        margin: 0;
-        height: auto;
-        font-size: 300%;
-        font-weight: 600;
-        color: var(--highlight);
-    }
-}
-/* Mobile Portrait or Landscape */
-@media screen and (max-device-width: 640px) {
-    .hero-text {
-        margin: 0;
-        height: auto;
-        font-size: 300%;
-        font-weight: 600;
-        color: var(--highlight);
     }
 }
 
