@@ -7,7 +7,7 @@
         --shadow-primary: #474747;
         --shadow-secondary: #cfcbc2;
         --gradient: linear-gradient(to right, var(--highlight), var(--accent));
-        --shadow-gradient: linear-gradient(to right, var(--shadow-primary), var(var(--shadow-secondary)));
+        --shadow-gradient: linear-gradient(to right, var(--shadow-primary), var(--shadow-secondary));
     }
 }
 
@@ -20,7 +20,7 @@
         --shadow-primary: #cfcbc2;
         --shadow-secondary: #474747;
         --gradient: linear-gradient(to right, var(--highlight), var(--accent));
-        --shadow-gradient: linear-gradient(to right, var(--shadow-primary), var(var(--shadow-secondary)));
+        --shadow-gradient: linear-gradient(to right, var(--shadow-primary), var(--shadow-secondary));
     }
 }
 
